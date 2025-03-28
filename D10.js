@@ -76,31 +76,65 @@ console.log(me);
 /* ESERCIZIO 1
   Crea una funzione chiamata "dice": deve generare un numero casuale tra 1 e 6.
 */
+const dice = function (max) {
+  const random = Math.ceil(Math.random() * max);
+  return random;
+};
+
+console.log(dice(6));
 
 /* ESERCIZIO 2
   Crea una funzione chiamata "whoIsBigger" che riceve due numeri come parametri e ritorna il maggiore dei due.
 */
+
+const whoIsBigger = function (a, b) {
+  if (a > b) {
+    console.log("a");
+  } else {
+    console.log("b");
+  }
+};
+
+console.log(whoIsBigger(32, 1));
+
+// D10.js:92 a
+// D10.js:98 undefined nonfunziona correttamente
 
 /* ESERCIZIO 3
   Crea una funzione chiamata "splitMe" che riceve una stringa come parametro e ritorna un'array contenente ogni parola della stringa.
 
   Es.: splitMe("I love coding") => ritorna ["I", "Love", "Coding"]
 */
+const string = "Sono stanca capo";
+const newString = "Sono stanca capo".split(" ");
+console.log(newString);
+//(3) ['Sono', 'stanca', 'capo']
+
+// So che non è una funzione ma era molto più veloce così, se avrò tempo alla fine ci ritornerò per creare una funzione generale
+
+// TODO
 
 /* ESERCIZIO 4
   Crea una funzione chiamata "deleteOne" che riceve una stringa e un booleano come parametri.
   Se il valore booleano è true la funzione deve ritornare la stringa senza il primo carattere, altrimenti la deve ritornare senza l'ultimo.
 */
+//TODO
 
 /* ESERCIZIO 5
   Crea una funzione chiamata "onlyLetters" che riceve una stringa come parametro e la ritorna eliminando tutte le cifre numeriche.
 
   Es.: onlyLetters("I have 4 dogs") => ritorna "I have dogs"
 */
+const numbString = "Devo dare da mangiare ai miei 3 gatti";
+const newSubString = function ()  {
+  for (i=0, i<numbString.length, i++)
+
+}
 
 /* ESERCIZIO 6
   Crea una funzione chiamata "isThisAnEmail" che riceve una stringa come parametro e ritorna true se la stringa è un valido indirizzo email.
 */
+//TODO
 
 /* ESERCIZIO 7
   Scrivi una funzione chiamata "whatDayIsIt" che ritorna il giorno della settimana corrente.
