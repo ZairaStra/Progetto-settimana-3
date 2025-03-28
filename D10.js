@@ -369,8 +369,11 @@ console.log(searchByTitle);
   Scrivi una funzione chiamata "removeIndex" che riceve un numero come parametro e ritorna l'array "movies" fornito privo dell'elemento nella posizione ricevuta come parametro.
 */
 const removeIndex = function (n) {
-  let;
+  for (let i = 0; i < movies.length; i++) {
+    delete movies[n];
+  }
 };
+console.log(removeIndex(5));
 
 // DOM (nota: gli elementi che selezionerai non si trovano realmente nella pagina)
 
