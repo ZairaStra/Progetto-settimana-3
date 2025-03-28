@@ -37,21 +37,39 @@ const me = {
 };
 console.log(me);
 
+// {name: 'Zaira', surname: 'Straticò', age: 32}
+
 /* ESERCIZIO D
   Crea del codice per rimuovere programmaticamente la proprietà "age" dall'oggetto precedentemente creato.
 */
+delete me.age;
+console.log(me);
+
+// {name: 'Zaira', surname: 'Straticò'}
 
 /* ESERCIZIO E
   Crea del codice per aggiungere programmaticamente all'oggetto precedentemente creato un array chiamato "skills", contenente i linguaggi di programmazione che conosci.
 */
+me.skills = ["HTML", "CSS"];
+console.log(me);
+
+//{name: 'Zaira', surname: 'Straticò', skills: Array(2)}
 
 /* ESERCIZIO F
   Crea un pezzo di codice per aggiungere un nuovo elemento all'array "skills" contenuto nell'oggetto "me".
 */
+me.skills.push("Javascript");
+console.log(me);
+
+//{name: 'Zaira', surname: 'Straticò', skills: Array(3)}
 
 /* ESERCIZIO G
   Crea un pezzo di codice per rimuovere programmaticamente l'ultimo elemento dall'array "skills" contenuto nell'oggetto "me".
 */
+me.skills.pop();
+console.log(me);
+
+//{name: 'Zaira', surname: 'Straticò', skills: Array(2)}
 
 // Funzioni
 
