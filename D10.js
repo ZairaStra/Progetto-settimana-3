@@ -76,13 +76,13 @@ console.log(me);
 /* ESERCIZIO 1
   Crea una funzione chiamata "dice": deve generare un numero casuale tra 1 e 6.
 */
-/* const dice = function (max) {
+const dice = function (max) {
   const random = Math.ceil(Math.random() * max);
   return random;
 };
 
 console.log(dice(6));
- */
+
 /* ESERCIZIO 2
   Crea una funzione chiamata "whoIsBigger" che riceve due numeri come parametri e ritorna il maggiore dei due.
 */
@@ -158,12 +158,14 @@ const newSubString = function ()  {
       values: [3, 3, 4]
   }
 */
+/* 
 const dice = function (max) {
   const random = Math.ceil(Math.random() * max);
   return random;
 };
 
 console.log(dice(6));
+ */
 //TODO
 
 /* ESERCIZIO 9
@@ -350,6 +352,13 @@ console.log(onlyInLastMillennium);
 /* ESERCIZIO 17
   Scrivi una funzione chiamata "searchByTitle" che riceve una stringa come parametro e ritorna i film nell'array "movies" fornito che la contengono nel titolo.
 */
+const searchByTitle = function () {
+  for (let i = 0; i < movies.length; i++) {
+    const movieName = movies[i];
+    movieName = movies.Title.indexOf("Lord");
+  }
+};
+console.log(searchByTitle);
 
 /* ESERCIZIO 18
   Scrivi una funzione chiamata "searchAndDivide" che riceve una stringa come parametro e ritorna un oggetto contenente due array: "match" e "unmatch".
@@ -359,6 +368,9 @@ console.log(onlyInLastMillennium);
 /* ESERCIZIO 19
   Scrivi una funzione chiamata "removeIndex" che riceve un numero come parametro e ritorna l'array "movies" fornito privo dell'elemento nella posizione ricevuta come parametro.
 */
+const removeIndex = function (n) {
+  let;
+};
 
 // DOM (nota: gli elementi che selezionerai non si trovano realmente nella pagina)
 
