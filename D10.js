@@ -12,14 +12,30 @@ REGOLE
 /* ESERCIZIO A
   Crea una variabile chiamata "sum" e assegnaci il risultato della somma tra i valori 10 e 20.
 */
+function add(a, b) {
+  const sum = a + b;
+  return sum;
+}
+console.log(add(10, 20));
 
 /* ESERCIZIO B
   Crea una variabile chiamata "random" e assegnaci un numero casuale tra 0 e 20 (deve essere generato dinamicamente a ogni esecuzione).
 */
+function generateRandom(max) {
+  const random = Math.floor(Math.random() * max);
+  return random;
+}
+console.log(generateRandom(20));
 
 /* ESERCIZIO C
   Crea una variabile chiamata "me" e assegnaci un oggetto contenente le seguenti proprietà: name = il tuo nome, surname = il tuo cognome, age = la tua età.
 */
+const me = {
+  name: "Zaira",
+  surname: "Straticò",
+  age: 32,
+};
+console.log(me);
 
 /* ESERCIZIO D
   Crea del codice per rimuovere programmaticamente la proprietà "age" dall'oggetto precedentemente creato.
